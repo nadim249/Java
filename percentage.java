@@ -20,10 +20,13 @@ public class percentage {
         int total =a + b + c + d + e;
         System.out.print("total number is:=");
         System.out.println(total);
+        System.out.println("Fullmark per subject");
+        int full = sc.nextInt();
 
-        double gross = total/5;
+        double gross = (double) total / (5 * full);
+        double percent = (double) gross * 100;
         System.out.print("average mark= ");
-        System.out.println(gross);
+        System.out.println(percent);
     
     }
 }
